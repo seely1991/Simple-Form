@@ -1,0 +1,33 @@
+<header>
+	<link href="./styles.css" rel="stylesheet" type="text/css">
+</header>
+<body>
+	<h1 id="title">Survey Form</h1>
+	<div id="form-box">
+		<p id="description">Please fill out this short form to tell us about your user experience</p>
+		<form id="survey-form">
+			<label id = "name-label">* Name</label><input id="name" type="text" placeholder="John Smith" required>
+			<p>Please select your gender:</p>
+			<label>Male<input type="radio" name="gender" value="male"></label>
+			<label>Female<input type="radio" name="gender" value="female"></label>
+			<label id = "email-label">* Email</label><input id="email" type="email" placeholder="smith34@hotmail.com" required>
+			<label id = "number-label">Number of items purchased</label><input id="number" placeholder="55" type="number" max="100" min="1">
+			<label id="select">My experience was:</label>
+			<select id="dropdown">
+				<option>Great! I would recommend it</option>
+				<option>Okay, nothing special.</option>
+				<option>I've had better :/</option>
+				<option>Pretty terrible, I'm actually quite upset.</option>
+			</select>
+			<fieldset>
+				<legend>Types of items purchased:</legend>
+				<label>Socks<input type="checkbox" name="chck" value="socks"></label>
+				<label>Pants<input type="checkbox" name="chck" value="pants"></label>
+				<label>Sweater<input type="checkbox" name="chck" value="sweater"></label>
+				<label>Pancho<input type="checkbox" name="chck" value="pancho"></label>
+			</fieldset>
+			<textarea id="comments" rows="5" cols="50" placeholder="additional comments"></textarea>
+			<button id="submit" type="submit">submit</button>
+		</form>
+	</div>
+</body>
